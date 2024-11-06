@@ -42,10 +42,10 @@ export function WallsOfWafflesMenuComponent() {
   }, [])
 
   return (
-    (<div className="min-h-screen bg-background pb-16">
+    (<div className="min-h-screen bg-black pb-16">
       <div className="p-4 md:p-8">
         <div className="flex justify-between items-center mb-6">
-          <h1 className="text-3xl font-bold">Devi Madras Cafe</h1>
+          <h1 className="text-3xl font-bold text-white">Devi Madras Cafe</h1>
           <div className="flex items-center space-x-2">
             <Toggle
               aria-label="Toggle menu view"
@@ -132,7 +132,7 @@ export function WallsOfWafflesMenuComponent() {
           </div>
         )}
       </div>
-      <div className="fixed bottom-0 left-0 right-0 p-4 bg-background border-t">
+      <div className="fixed bottom-0 left-0 right-0 p-4 bg-black border-t">
         <Drawer open={isDrawerOpen} onOpenChange={setIsDrawerOpen}>
           <DrawerTrigger asChild>
             <Button className="w-full">View Top-Selling Waffles</Button>
